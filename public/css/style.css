@@ -5,16 +5,19 @@
 
 html, body {
     font-family: sans-serif;
+    width: 100%;
+    height: 100%;
 }
 
     /* HEADER STYLE */
 
 header {
-    display: fixed;
+    position: fixed;
+    width: 100%;
     top: 0;
     height: 2em;
     background-color: rgb(0, 173, 239);
-    box-shadow: 0 0 20px rgb(33, 44, 55);
+    box-shadow: 0 0 23px rgb(0, 0, 0);
 }
 
 header>ul,li {
@@ -23,17 +26,19 @@ header>ul,li {
 }
 
 li.menuItem{
-    margin-left: 3px;
-    padding: 0.2em;
+    margin-left: 1px;
+    padding: 0.3em;
     color: rgb(255, 255, 255);
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 7px;
+    border: 2px solid rgb(0, 173, 239);
     font-weight: 500;
 }
 
 li.menuItem:hover {
-    box-shadow: 0 0 30px rgb(44, 55, 66);
-    border-radius: 0px;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    color: rgb(0, 173, 239);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    border-radius: 7px;
     transition: 500ms;
     cursor: pointer;
 }
@@ -63,7 +68,7 @@ ul#kodeks {
     position: absolute;
     display: block;
     top: 2.5em;
-    left: 15%;
+    left: 1%;
     padding: 7px;
     background-color: rgb(0, 173, 239);
     color: rgb(255, 255, 255);
@@ -72,8 +77,16 @@ ul#kodeks {
 
 li.kodeks {
     display: block;
-    border: 1px solid rgb(255, 255, 255);
-    padding: 7px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 3px;
     margin: 3px;
     border-radius: 7px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+li.kodeks:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 173, 239);
+    transition: 300ms;
 }
