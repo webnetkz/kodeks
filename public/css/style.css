@@ -57,7 +57,7 @@ input#search {
     margin-left: 30%;
     outline: none;
     border-radius: 7px;
-    width: 20%;
+    width: 21%;
 }
 
 input#search:focus {
@@ -117,8 +117,8 @@ hr {
 div#content {
     visibility: hidden;
     position: relative;
-    top: 5em;
-    width: 70%;
+    top: 4em;
+    width: 74%;
     left: 2%;
     padding: 1em;
     background-color: rgb(249, 249, 249);
@@ -141,4 +141,13 @@ p.section {
 p.general {
     font-weight: 700;
     margin: 1em;
+}
+
+p.footnote {
+    text-align: center;
+}
+
+p.article {
+    margin-bottom: 1em;
+    font-weight: 700;
 }

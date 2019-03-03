@@ -16,14 +16,21 @@ function ajax(getK) {
     }
 }
 
+
 function getConstitution() {
     kodeks.style.cssText += 'visibility: hidden;';
 
     ajax('constitution');
-
 }
 
 function getKodeks() {
     kodeks.style.cssText += 'visibility: visible;';
+}
+
+function newsPortal() {
+    kodeks.style.cssText = 'visibility: hidden;';
+    content.style.cssText = 'visibility: hideen;';
+
+    //ajax popravki
 }
 
