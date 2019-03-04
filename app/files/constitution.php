@@ -44,7 +44,15 @@
     
             foreach($result as $k => $v) {
                 if($v['id'] <= 9) {
-                    echo '<a href="#' . $v['id'] . '">статья ' . $v['id'] . '</a><br>';
+                    $post = $v['id'] - 1;
+
+                    if($post == 0) {
+                        echo '<a href="#">Статья 1</a><br>';
+                    } else {
+                        echo '<a href="#' . $post . '">статья ' . $v['id'] . '</a><br>';
+                    }
+                    
+                    //
                 }
             }
     
