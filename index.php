@@ -24,9 +24,9 @@
 
         <header>
             <ul>
-                <li class="menuItem" onclick="getConstitution();" title="Читать Конституцию Республики Казахстан">Конституция</li>
-                <li class="menuItem" onclick="getKodeks();" title="Читать кодексы Республики Казахстан">Кодексы</li>
-                <li class="menuItem" onclick="newsPortal();" title="Поправки Конституции и кодексов Республики Казахстан">Поправки</li>
+                <li class="menuItem" onclick="getConstitution();" title="Отобразить Конституцию Республики Казахстан">Конституция</li>
+                <li class="menuItem" onclick="getKodeks();" title="Отобразить кодексы Республики Казахстан">Кодексы</li>
+                <li class="menuItem" onclick="newsPortal();" title="Отобразить поправки Конституции и кодексов Республики Казахстан">Поправки</li>
                     <ul id="kodeks">
                         <li class="kodeks">Бюджетный кодекс Республики Казахстан</li>
                         <li class="kodeks">Водный кодекс Республики Казахстан</li>
@@ -53,6 +53,7 @@
         <div id="content">
         
         </div>
+
 
         <script src="public/js/main.js"></script>
     </body>
