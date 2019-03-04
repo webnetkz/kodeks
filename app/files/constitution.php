@@ -6,13 +6,9 @@
     $result = $pdo->x->query('SELECT * FROM constitution;');
     $result = $result->fetchAll(PDO::FETCH_ASSOC);
 
-    $general = $result[1]['general'];
-    $article = $result[0]['article'];
-    $content = $result[0]['content'];
-    $footnote = $result[0]['footnote'];
 
-    echo '<h1>Конституция Республики Казахстан</h1>';
-    echo '<p class="folk">
+    echo '<h1>Конституция Республики Казахстан</h1>
+        <p class="folk">
         Мы, Народ Казахстана,<br>
         объединенный общей исторической судьбой,<br>
         созидая государственность на исконной казахской земле,<br>
@@ -23,11 +19,18 @@
         перед нынешними и будущими поколениями,<br>
         исходя из своего суверенного права,<br>
         принимаем настоящую Конституцию.<br>
-        </p>';
-    echo '<p class="section">Раздел ' . $general .'</p>';
-    echo '<p class="general">Общие положения</p>';
-    echo '<p class="article" id=' . $article . '>Статья ' . $article . '</p>';
-    echo $content;
-    echo '<hr><p class="footnote">' . $footnote . '</p><hr>';
+        </p>
+            <p class="section">Раздел ' . $result[0]['general'] .'</p>
+            <p class="general">Общие положения</p>';
+                foreach($result as $k => $v) {
+                    echo '<p class="article" id=' . $v['id'] . '>Статья ' . $v['id'] . '</p>
+                    <p class="core">' . $v['content'] . '</p>';
+                    echo '<hr><p class="footnote">' . $v['footnote'] . '</p><hr>';
+
+                    if($v['id'] == 8) {
+                        echo '<p class="section">Раздел ' . $result[9]['general'] .'</p>
+                        <p class="general">Человек и гражданин</p>';
+                    }
+                }
 ?>
 

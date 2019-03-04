@@ -145,9 +145,17 @@ p.general {
 
 p.footnote {
     text-align: center;
+    width: 80%;
+    margin-left: 10%;
 }
 
 p.article {
     margin-bottom: 1em;
     font-weight: 700;
+    margin-left: 5em;
+}
+
+p.core {
+    margin-left: 1em;
+    line-height: 1.3em;
 }
